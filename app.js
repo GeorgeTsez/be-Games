@@ -9,7 +9,7 @@ const { handle500, handlePsql } = require("./controllers/controllers.error");
 const app = express();
 
 const cors = require('cors');
-App.use(cors());
+app.use(cors());
 
 app.get("/api/categories", getCategories);
 app.get("/api/reviews", getReviews);
